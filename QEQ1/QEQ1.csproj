@@ -197,6 +197,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BackofficeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\QEQController.cs" />
@@ -205,6 +206,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BD.cs" />
+    <Compile Include="Models\Categorias.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Usuario.cs" />
@@ -271,6 +273,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\QEQ\Index.cshtml" />
     <Content Include="Views\QEQ\Login.cshtml" />
+    <Content Include="Views\QEQ\Funciono.cshtml" />
+    <Content Include="Views\QEQ\About.cshtml" />
+    <Content Include="Views\QEQ\Instrucciones.cshtml" />
+    <Content Include="Views\Backoffice\Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

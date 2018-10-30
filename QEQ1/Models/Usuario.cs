@@ -26,7 +26,7 @@ namespace QEQ1.Models
         }
 
         private string _Contraseña;
-        [Required(ErrorMessage = "Contraseña incorrecta")]
+        [Required(ErrorMessage = "Ingrese una contraseña entre 8 y 18 caracteres")]
         [StringLength(18, MinimumLength = 8)]
         public string Contraseña
         {
@@ -57,7 +57,25 @@ namespace QEQ1.Models
         }
 
 
+        public Usuario(int IDUsuario, String Email, String Contraseña, string NomUsuario, string Rol, int Puntaje)
+        {
+            _IDUsuario = IDUsuario;
+            _Email= Email;
+            _Contraseña = Contraseña;
+            _NomUsuario = NomUsuario;
+            _Rol = Rol;
+            _Puntaje = Puntaje;
 
+        }
+        public Usuario()
+        {
+            IDUsuario = IDUsuario;
+            Email = Email;
+            Contraseña = Contraseña;
+            NomUsuario = NomUsuario;
+            Rol = Rol;
+            Puntaje = Puntaje;
+        }
 
     }
 }
